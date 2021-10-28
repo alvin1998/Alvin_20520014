@@ -14,9 +14,11 @@ class MainActivity : AppCompatActivity() {
     fun submit_btn(view: View){
 
         var namaEditText = findViewById<EditText>(R.id.nama_edit_text)
-
+        var emailEditText = findViewById<EditText>(R.id.email)
         var nama = namaEditText.text.toString()
-        var toast = Toast.makeText(applicationContext, nama , Toast.LENGTH_LONG)
+        var email = emailEditText.text.toString()
+        var hasil = nama+"/n"+email
+        var toast = Toast.makeText(applicationContext, hasil , Toast.LENGTH_LONG)
         toast.show()
 
     }
